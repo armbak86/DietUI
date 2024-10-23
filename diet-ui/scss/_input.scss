@@ -1,0 +1,138 @@
+// Button 
+.btn {
+	font-weight: 600;
+	padding: 12px 30px;
+	border-radius: 30px;
+	color: $white;
+	background: $dark;
+	border-color: $dark;
+
+	&:hover {
+		color: $white;
+		background: darken($dark, 5%);
+		border-color: darken($dark, 5%);
+	}
+
+	&:active,
+	&:focus {
+		outline: none !important;
+		box-shadow: none;
+	}
+
+	&.btn-primary {
+		background: $primary;
+		border-color: $primary;
+
+		&:hover {
+			background: darken($primary, 5%);
+			border-color: darken($primary, 5%);
+		}
+	}
+
+	&.btn-secondary {
+		color: $dark;
+		background: $secondary;
+		border-color: $secondary;
+
+		&:hover {
+			background: darken($secondary, 5%);
+			border-color: darken($secondary, 5%);
+		}
+	}
+
+	&.btn-white-outline {
+		background: transparent;
+		border-width: 2px;
+		border-color: rgba($white, .3);
+
+		&:hover {
+			border-color: rgba($white, 1);
+			color: $white;
+		}
+	}
+}
+
+textarea {
+	height: auto !important;
+}
+
+.form-control {
+	height: 50px;
+	border-radius: 10px;
+	font-family: $font-family;
+	direction: rtl;
+	
+	&:active,
+	&:focus {
+		outline: none;
+		box-shadow: none;
+		border-color: $primary;
+		box-shadow: 0 1px 4px 0 rgba($black, .2);
+	}
+
+	&::-webkit-input-placeholder {
+		font-size: 14px;
+	}
+
+	&::-moz-placeholder {
+		font-size: 14px;
+	}
+
+	&:-ms-input-placeholder {
+		font-size: 14px;
+	}
+
+	&:-moz-placeholder {
+		font-size: 14px;
+	}
+}
+
+.checkbox-container {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+  
+	input[type="checkbox"] {
+	  appearance: none;
+	  width: 20px;
+	  height: 20px;
+	  border: 2px solid $dark; // Use $dark or create $checkbox-border-color variable
+	  border-radius: 4px;
+	  background-color: $lighter; // Use $lighter or create $checkbox-bg-color variable
+	  position: relative;
+	  cursor: pointer;
+	  transition: border-color 0.3s ease;
+	  vertical-align: middle;
+  
+	  &:checked {
+		background-color: $primary; // Use $primary or create $checkbox-check-color variable
+		border-color: $primary; // Use $primary or create $checkbox-check-color variable
+  
+		&::after {
+		  content: '✔';
+		  color: $white; // Use $white for the checkmark
+		  font-size: 12px;
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		}
+	  }
+  
+	  &:hover {
+		border-color: $secondary; // Use $secondary or create $checkbox-hover-border-color variable
+	  }
+	}
+  
+	label {
+	  margin-left: 10px;
+	  font-size: 14px;
+	  color: $body_color; // Use $body_color for label text
+	  cursor: pointer;
+	  transition: color 0.3s ease;
+  
+	  &:hover {
+		color: $primary; // Use $primary or create $link-hover-color variable
+	  }
+	}
+  }

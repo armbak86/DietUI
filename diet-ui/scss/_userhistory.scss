@@ -1,0 +1,46 @@
+.content {
+    margin-top: 2rem;
+}
+
+.table-container {
+    background-color: $lighter; 
+    border-radius: $border-radius;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.table {
+    thead {
+        background-color: $primary; 
+    }
+
+    tbody {
+        tr {
+            &:hover {
+                background-color: $light; 
+            }
+        }
+    }
+}
+
+.total-calories {
+    background-color: $lighter; 
+    border-radius: $border-radius;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+
+    .calories-value {
+        color: $secondary; 
+        font-size: 2rem;
+    }
+
+    .calories-label {
+        font-size: 1.25rem;
+    }
+}

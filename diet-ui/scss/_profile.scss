@@ -1,0 +1,13 @@
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: $secondary; 
+    
+    .sidebar-title {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        color: $secondary;
+        border-bottom: 2px solid $white;
+    }
+}
